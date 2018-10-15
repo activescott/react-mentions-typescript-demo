@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/recompose": "^0.27.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts-ts": "3.1.0"
+    "react-mentions": "^2.3.1",
+    "react-scripts-ts": "3.1.0",
+    "recompose": "^0.30.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

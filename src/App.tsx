@@ -1,7 +1,8 @@
-import * as React from 'react';
-import './App.css';
+import * as React from 'react'
+import { Examples } from './examples/Examples'
 
-import logo from './logo.svg';
+import './App.css'
+import logo from './logo.svg'
 
 class App extends React.Component {
   public render() {
@@ -9,14 +10,16 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">react-mentions TypeScript demo</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+          This is a demonstration of using the <a href="https://github.com/signavio/react-mentions">react-mentions</a> component in a TypeScript application.
         </p>
+
+        <Examples />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
