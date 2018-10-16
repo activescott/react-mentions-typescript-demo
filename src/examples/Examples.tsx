@@ -1,5 +1,8 @@
 import * as React from 'react'
+
+import AsyncGithubUserMentions from './AsyncGithubUserMentions'
 import SingleLine from './SingleLine'
+
 
 const users = [
   {
@@ -35,11 +38,15 @@ const users = [
 interface Props {
 }
 
-
 export const Examples: React.SFC<Props> = (props) => {
   return (
-    <div>
-      <SingleLine data={users} />
+    <div style={ {width: '80%'} }>
+      <SingleLine
+        data={users} 
+      />
+      <AsyncGithubUserMentions
+        data={users}
+      />
     </div>
   )
 }

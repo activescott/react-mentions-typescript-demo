@@ -3,6 +3,7 @@ import { Mention, MentionsInput, SuggestionDataItem } from 'react-mentions'
 
 import defaultMentionStyle from './defaultMentionStyle'
 import defaultStyle from './defaultStyle'
+
 import provideExampleValue from './higher-order'
 
 interface SingleLineProps {
@@ -17,6 +18,7 @@ const SingleLine: React.StatelessComponent<SingleLineProps> = (props) => {
     <div className="single-line">
       <h3>Single line input</h3>
       <MentionsInput
+        singleLine
         placeholder={"Mention people using '@'"}
         value={props.value}
         onChange={props.onChange}
